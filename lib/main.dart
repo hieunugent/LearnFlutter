@@ -2,7 +2,13 @@ import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  // runApp(MyApp());
+  runApp(const Center(
+    child: Text(
+      'Hello,Wolrd!',
+      textDirection: TextDirection.ltr,
+    ),
+  ));
 }
 
 class MyApp extends StatelessWidget {
