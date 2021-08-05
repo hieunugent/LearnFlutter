@@ -2,10 +2,20 @@ import 'package:flutter/material.dart';
 
 class Question extends StatelessWidget {
   // const Question({ Key? key }) : super(key: key);
-  String questionText;
+  final String questionText; // can rreassign when do it with final
+
   Question(this.questionText);
+
   @override
   Widget build(BuildContext context) {
-    return Text(questionText);
+    return Container(
+      width: double.infinity,
+      margin: EdgeInsets.all(10),
+      child: Text(
+        questionText,
+        style: TextStyle(fontSize: 28),
+        textAlign: TextAlign.center,
+      ),
+    );
   }
 }
